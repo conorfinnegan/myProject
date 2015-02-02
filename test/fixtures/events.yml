@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  venue_id: 1
+  eventdate: 2015-01-27
+  type_id: 1
+  home: MyString
+  away: MyString
+  artist: MyString
+  image: MyString
+  video: MyText
+  cost: 1
+
+two:
+  venue_id: 1
+  eventdate: 2015-01-27
+  type_id: 1
+  home: MyString
+  away: MyString
+  artist: MyString
+  image: MyString
+  video: MyText
+  cost: 1

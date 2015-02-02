@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Address:</b>
+  <%= @venue.address %>
+</p>
+
+<p>
+  <b>Latitude:</b>
+  <%= @venue.latitude %>
+</p>
+
+<p>
+  <b>Longitude:</b>
+  <%= @venue.longitude %>
+</p>
+
+<p>
+  <b>Map:</b>
+  <%= image_tag(@venue.map, :size => "150x150") %>
+</p>
+
+<p>
+  <b>Seating:</b>
+  <%= image_tag(@venue.seating, :size => "150x150") %>
+</p>
+
+
+<%= link_to 'Edit', edit_venue_path(@venue) %> |
+<%= link_to 'Back', venues_path %>

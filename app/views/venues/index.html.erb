@@ -1,0 +1,31 @@
+<h1>Listing venues</h1>
+
+<table>
+  <tr>
+    <th>Address</th>
+    <th>Latitude</th>
+    <th>Longitude</th>
+    <th>Map</th>
+    <th>Seating</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @venues.each do |venue| %>
+  <tr>
+    <td><%= venue.address %></td>
+    <td><%= venue.latitude %></td>
+    <td><%= venue.longitude %></td>
+    <td><%= image_tag(venue.map, :size => "150x150") %></td>
+    <td><%= image_tag(venue.seating, :size => "150x150") %></td>
+    <td><%= link_to 'Show', venue %></td>
+    <td><%= link_to 'Edit', edit_venue_path(venue) %></td>
+    <td><%= link_to 'Destroy', venue, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Venue', new_venue_path %>
