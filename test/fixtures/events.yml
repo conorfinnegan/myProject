@@ -2,22 +2,18 @@
 
 one:
   venue_id: 1
-  eventdate: 2015-01-27
-  type_id: 1
-  home: MyString
-  away: MyString
-  artist: MyString
+  eventsdate: 1
+  eventtype_id: 1
+  eventname: MyString
   image: MyString
   video: MyText
   cost: 1
 
 two:
   venue_id: 1
-  eventdate: 2015-01-27
-  type_id: 1
-  home: MyString
-  away: MyString
-  artist: MyString
+  eventsdate: 1
+  eventtype_id: 1
+  eventname: MyString
   image: MyString
   video: MyText
   cost: 1

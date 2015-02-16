@@ -22,15 +22,15 @@ ActiveRecord::Schema.define(:version => 20150127153952) do
   create_table "events", :force => true do |t|
     t.integer  "venue_id"
     t.date     "eventdate"
-    t.integer  "type_id"
+    t.integer  "event_type_id"
     t.string   "home"
     t.string   "away"
     t.string   "artist"
     t.string   "image"
     t.text     "video"
     t.integer  "cost"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "posts", :force => true do |t|

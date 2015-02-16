@@ -20,12 +20,14 @@
 	width: 1400px;
 	background:#0040FF;
 	height:10;
+	display: inline;
 }
 
 #header
 {
 	background:#CEE3F6;
 	padding: 20px;
+	display: inline;
 }
 
 #header h1 { margin: 0; }

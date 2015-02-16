@@ -1,4 +1,7 @@
 class EventTypesController < ApplicationController
+
+	before_filter :authorise, :only => [:new, :edit, :delete]
+
   # GET /event_types
   # GET /event_types.json
   def index

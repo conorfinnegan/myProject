@@ -13,27 +13,19 @@
 
   <div class="field">
     <%= f.label :venue_id %><br />
-    <%= f.collection_select :venue_id, Venue.all, :id, :address %>
+    <%= f.number_field :venue_id %>
   </div>
   <div class="field">
     <%= f.label :eventdate %><br />
-    <%= f.date_select :eventdate %>
+    <%= f.number_field :eventdate %>
   </div>
   <div class="field">
-    <%= f.label :type_id %><br />
-    <%= f.collection_select :type_id, Event_Type.all, :id, :eventtype %>
+    <%= f.label :eventtype_id %><br />
+    <%= f.number_field :event_type_id %>
   </div>
   <div class="field">
-    <%= f.label :home %><br />
-    <%= f.text_field :home %>
-  </div>
-  <div class="field">
-    <%= f.label :away %><br />
-    <%= f.text_field :away %>
-  </div>
-  <div class="field">
-    <%= f.label :artist %><br />
-    <%= f.text_field :artist %>
+    <%= f.label :eventname %><br />
+    <%= f.text_field :eventname %>
   </div>
   <div class="field">
     <%= f.label :image %><br />

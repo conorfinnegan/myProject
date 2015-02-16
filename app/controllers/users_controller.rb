@@ -1,4 +1,7 @@
 class UsersController < ApplicationController
+	
+	before_filter :authorise, :only => [:edit, :delete]
+	
   # GET /users
   # GET /users.json
   def index
@@ -44,6 +47,7 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       if @user.save
+		Blogmailer.register(@user)
         format.html { redirect_to @user, notice: 'User was successfully created.' }
         format.json { render json: @user, status: :created, location: @user }
       else
